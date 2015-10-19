@@ -2,6 +2,7 @@
 sui移动ui框架＋react组件化＋webpack模块管理构建混合app方案
 
 [sui官网](http://m.sui.taobao.org/getting-started)
+[react中文官网](http://reactjs.cn/)
 
 # 开始使用
 
