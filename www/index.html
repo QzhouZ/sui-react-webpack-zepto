@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>APP</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style/app.css">
+</head>
+
+<body>
+    <div class="page page-current" id='home'>
+        <header class="bar bar-nav">
+            <h1 class='title'>路由</h1>
+        </header>
+        <nav class="bar bar-tab">
+            <a class="tab-item tab-link active" href="#home_content">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">首页</span>
+            </a>
+            <a class="tab-item tab-link" href="#sort_content">
+                <span class="icon icon-me"></span>
+                <span class="tab-label">分类</span>
+            </a>
+            <a class="tab-item tab-link" href="#cart_content">
+                <span class="icon icon-star"></span>
+                <span class="tab-label">预购篮</span>
+            </a>
+            <a class="tab-item tab-link" href="#me_content">
+                <span class="icon icon-cart"></span>
+                <span class="tab-label">我的</span>
+            </a>
+        </nav>
+        <div class="content">
+            <div class="tabs">
+                <div id="home_content" class="tab active">
+                    
+                </div>
+                <div id="sort_content" class="tab">
+                    <div class="content-block">
+                        分类
+                    </div>
+                </div>
+                <div id="cart_content" class="tab">
+                    <!-- Slider -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img style="width: 100%;" src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+                            <div class="swiper-slide"><img style="width: 100%;" src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+                            <div class="swiper-slide"><img style="width: 100%;" src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div id="me_content" class="tab">
+                    <div class="content-block">
+                        我的
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page" id='router3'>
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back" href="#">
+                <span class="icon icon-left"></span> 返回
+            </a>
+            <h1 class='title'>路由</h1>
+        </header>
+        <div class="content">
+            <div class="content-block">
+                这是内联编写的页面，点击左上角的 <a href="#" class='back'>返回</a> 按钮返回上一页。
+            </div>
+        </div>
+    </div>
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>
