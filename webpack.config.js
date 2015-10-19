@@ -25,20 +25,20 @@ module.exports = function(options) {
                 lib: path.join(__dirname, "./www_src/lib"),
                 view: path.join(__dirname, "./www_src/view")
             }
-        }
-        //plugins: [
-        //    new HtmlWebpackPlugin({
-        //        filename: '../index.html',
-        //        hash: true,
-        //        inject: true,
-        //        template: './www_src/index.html'
-        //    })
-        //]
+        },
+        plugins: [
+            // Webpack压缩代码的时候，React官方提供的代码已经是合并的, 可以通过以下插件优化
+            new webpack.DefinePlugin({
+                "process.env": {
+                    NODE_ENV: JSON.stringify("production")
+                }
+            })
+        ]
     };
 
     // 开发模式
     if (options.environment === 'dev') {
-        config.devtool = 'source-map';
+        // config.devtool = 'source-map';
        /* Array.prototype.unshift.call(
             config.entry,
             'webpack-dev-server/client?http://127.0.0.1:3000',
